@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<html>
+	<meta charset="UTF-8">
+	<head>
+	<title>home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script> 
+    $(document).ready(function(){
+    $(".flip1").click(function(){
+        $(".panel1").slideToggle("slow");
+    });
+    $('#click_advance1').click(function(){
+    $('#display_advance1').slideToggle("slow");
+    $(this).html('<i class="fa fa-minus" style="font-size:24px"></i>');
+    });
+    });
+    $(document).ready(function(){
+    $(".flip2").click(function(){
+        $(".panel2").slideToggle("slow");
+    });
+    $('#click_advance2').click(function(){
+    $('#display_advance2').toggle('10');
+    $(this).html('<i class="fa fa-minus" style="font-size:24px"></i>');
+    });
+    });
+    $(document).ready(function(){
+    $(".flip3").click(function(){
+        $(".panel3").slideToggle("slow");
+    });
+    $('#click_advance3').click(function(){
+    $('#display_advance3').toggle('10');
+    $(this).html('<i class="fa fa-minus" style="font-size:24px"></i>');
+    });
+    });
+    </script>
+		<style>
+			*{
+				box-sizing:border-box;
+				margin:0;
+				padding:0;
+                font-family: roboto;
+			}
+            img{
+                /* max-width: 100%; */
+            }
+            body{
+                margin:  auto 10px;
+                
+            }
+            .navbar{
+                width: 98.5%;
+                background-color: #6E2A97;
+                min-height: 50px;
+                z-index: 99;
+                position: fixed;
+                color: #fff;
+                display: table;
+                background: #6E2A97;
+                filter: opacity(0.9);
+            }
+            .image-logo{
+                width: 50%;
+                float: left;
+                padding: 10px 0px 0px 35px;
+                animation: rotation 4s infinite ease-in-out;
+            }
+            @keyframes rotation {
+                0%, 100% {
+                    transform: rotateY(10deg);
+                }
+                50% {
+                    transform: rotateX(10deg);
+                }
+            }
+            .navbar .image-logo img{
+                float: left;
+                
+            }
+            .list{
+                width: 50%;
+                float: left;
+                padding-top: 10px;
+                
+            }
+            .navbar .list-inline li{
+                display: inline;
+                font-weight: bold;
+                color: #fff;
+                font-size: 15px;
+                padding-right: 36px;
+                list-style-type: none;
+                vertical-align: middle;
+            }
+            .navbar .list-inline li a{
+                text-decoration: none;
+                color: #fff;
+            }
+            .class1{
+                background: url("hero-img.png");
+                background-size: cover;
+                width: 100%;
+                min-height: 720px;
+            }
+            .class1-left{
+                width: 50%;
+                float: left;
+                
+            }
+            .class1-right{
+                width: 50%;
+                float: left;
+            }
+            .slide-details{
+                width: 100%;
+                min-height: 720px;
+                background-color: #560089;
+                opacity: 0.8;
+                float: left;
+                padding: 183px;
+                filter: brightness(1.2);
+                line-height: 35px;
+                font-weight: bold;
+                font-size: 30px;  
+            }
+             .slide-details p{
+                
+               color: #fff;
+            }
+            .slide-details .button-content{
+                padding: 15px;
+                color: #fff;
+                background-color: transparent;
+                border: 2px solid #fff;
+                font-weight: bold;
+            }
+            .slide-details .button{
+                float: left;
+                min-width: 0;
+                min-height: 0;
+                background-color: transparent;
+                padding-top: 15px;
+                animation: rotation1 4s infinite linear;
+            }
+            .slide-details .button-content:hover{
+                background-color: #fff;
+                color: #560089;
+            }
+            .class1-right-content{
+                width: 100%;
+                min-height: 720px;
+                background-color: #560089;
+                opacity: 0.8;
+                float: left;
+                padding: 115px;
+                filter: brightness(1.2);
+                line-height: 35px;
+                font-weight: bold;
+                font-size: 20px;  
+            }
+            #play-circle{
+                padding-top: 120px;
+                width: 20%;
+                animation: rotation1 4s infinite linear;
+            }
+            @keyframes rotation1 {
+                0%, 100% {
+                    transform: translateY(5px);
+                }
+                50% {
+                    transform: rotateX(3deg);
+                }
+            }
+            #dots{
+                padding-left: 45px;
+                width: 45%;
+            }
+            .soundexe0{
+                min-height: 25px;
+                width: 100%;
+                background-color: #560089;
+                display: table;
+                /* filter: brightness(1.2); */
+                /* animation: myanimation 10s infinite ease-in-out; */
+            }
+
+            .soundexe0 li{
+                /* float:left; */
+                display: inline-block;
+                list-style-type: none;
+                /* padding: 15% 0 0 16%; */
+                animation: rotation2 4s infinite ease-in-out;
+            }
+            .soundexe0 li:first-child{
+                padding-left: 0%;
+                padding-top: 22%;
+            }
+            .soundexe0 li:nth-child(2){
+                padding-left: 20%;
+                padding-top: 0%;
+            }
+            .soundexe0 li:nth-child(3){
+                padding-left: 30%;
+                padding-top: 12%;
+            }
+            .soundexe0 li:nth-child(4){
+                padding-left: 15%;
+                padding-top: 12%;
+            }
+            .class2{
+                width: 100%;
+            }
+            .class2-left{
+                background: url("path-6.svg");
+                background-position: left;
+                background-repeat: no-repeat;
+                width: 17%;
+                float: left;
+                min-height: 720px;
+                background-color:#560089 ;
+                filter: brightness(1.2);
+                opacity: 0.8;
+            }
+            .class2-right{
+                width: 83%;
+                float:right;
+                min-height: 720px;
+                background-color:#560089 ;
+                filter: brightness(1.2);
+                opacity: 0.8;
+                color: #fff;
+            }
+            .class2-right-text{
+                padding-left: 5%;
+                font-size: 150%;
+            }
+            #yellow-text{
+                color: rgb(243, 132, 6);
+            }
+            .class2-right .button-content{
+                padding: 15px;
+                color: #fff;
+                background-color: transparent;
+                border: 2px solid #fff;
+                font-weight: bold;
+            }
+            .class2-right .button{
+                float: left;
+                padding-left: 5%;
+                min-width: 0;
+                min-height: 0;
+                background-color: transparent;
+                padding-top: 15px;
+                animation: rotation1 4s infinite linear;
+            }
+            .class2-right .button-content:hover{
+                background-color: #fff;
+                color: #560089;
+            }
+            .soundexe2{
+                min-height: 20px;
+                width: 100%;
+                background-color:#560089 ;
+                filter: brightness(1.2);
+                opacity: 0.8;
+                display: table;
+                
+            }
+
+            .soundexe2 li{
+                /* float:left; */
+                display: inline-block;
+                list-style-type: none;
+                /* padding: 15% 0 0 16%; */
+                animation: rotation2 4s infinite ease-in-out;
+            }
+            .soundexe2 li:first-child{
+                padding-left: 27%;
+                padding-top: 0%;
+            }
+            #button-left-sound{
+                padding-left: 50%;
+            }
+            .class3{
+                width: 100%;
+                background-color:#DF4473;
+                /* filter: brightness(1.2); */
+                min-height: 809px;
+                padding-top: 15px;
+                animation: myanimation1 10s infinite ease-in-out;
+                clear: both;
+            }
+            @keyframes myanimation1 {
+                0% {background-color: #DF4473}
+                50%{background-color:rgb(124, 124, 57);}
+                100% {background-color: #DF4473}
+                }
+            .class3-left{
+                width: 6%;
+                float: left;
+                background-color:#DF4473;
+                /* filter: brightness(1.2); */
+                border: 1px solid transparent;
+                animation: myanimation1 10s infinite ease-in-out;
+            }
+            .class3-mid{
+                width: 65%;
+                float: left;
+                background-color:#DF4473;
+                /* filter: brightness(1.2); */
+                animation: myanimation1 10s infinite ease-in-out;
+            }
+            .class3-mid-section1 {
+                width: 70%;
+                float: inherit;
+                padding: 10px;
+                position: relative;
+                left: 70px;
+            }
+            .class3-mid-section2 {
+                width: 68.3%;
+                float: right;
+                position: relative;
+                left: 395px;
+                top: -388px;
+            }
+            .class3-mid-section2-top {
+                width: 33%;
+                padding: 10px;
+                position: relative;
+            }
+            .class3-mid-section2-bottom {
+                width: 33%;
+                padding: 10px;
+                padding-top: 0;
+                position: relative;
+            }
+            .class3-mid-section1:after {
+                content: "";
+                position: absolute;
+                background: url(play-circle.svg);
+                background-repeat: no-repeat;
+                width: 100%;
+                height: 100%;
+                top: 36%;
+                left: 38%;
+                z-index: 1;
+                animation: rotation1 4s infinite linear;
+            }
+            .class3-mid-section2-top:after{
+                content: "";
+                position: absolute;
+                background: url(play-circle.svg);
+                background-repeat: no-repeat;
+                width: 100%;
+                height: 100%;
+                top: 18%;
+                left: 17%;
+                z-index: 1;
+                animation: rotation1 4s infinite linear;
+            }
+            .class3-mid-section2-bottom:after{
+                content: "";
+                position: absolute;
+                background: url(play-circle.svg);
+                background-repeat: no-repeat;
+                width: 100%;
+                height: 100%;
+                top: 10%;
+                left: 18%;
+                z-index: 1;
+                animation: rotation1 4s infinite linear;
+            }
+            .class3-mid .button-content{
+                padding: 15px;
+                color: #fff;
+                background-color: transparent;
+                border: 2px solid #fff;
+                font-weight: bold;
+            }
+            .class3-mid .button {
+                padding-left: 76px;
+                float: left;
+                min-width: 0;
+                min-height: 0;
+                background-color: transparent;
+                padding-top: 15px;
+                animation: rotation1 4s infinite linear;
+            }
+            .class3-mid .button-content:hover{
+                background-color: #fff;
+                color: #560089;
+            }
+            .class3 img{
+                max-width: 100%;
+            }
+            .class3-right {
+                width: 20%;
+                float: right;
+                background-repeat: no-repeat !important;
+                background: no-repeat;
+                min-height: 600px;
+                background-color: #DF4473;
+                /* filter: brightness(1.2); */
+                background: url(portofolio-element.png);
+                background-position: right;
+                background-size: 265px 390px;
+                animation: myanimation1 10s infinite ease-in-out;
+            }
+            .class3 h4 {
+                text-decoration: none;
+                color: #fff;
+                padding-left: 80px;
+            }
+            .class4{
+                width: 100%;
+                min-height: 450px;
+                padding-top: 15px;
+                /* border: 1px solid; */
+                /* background-color: blueviolet; */
+                /* animation: myanimation1 10s infinite ease-in-out; */
+                clear: both;
+
+            }
+            .class4-left{
+                width: 15%;
+                float: left;
+                min-height: 450px;
+                background: url("microphone.svg");
+                background-repeat: no-repeat;
+                background-position-y: 90px;
+            }
+            .class4-mid{
+                width: 76%;
+                float: left;
+                min-height: 450px;
+                
+
+            }
+            .class4-mid-top{
+                background-color: #fff;
+
+            }
+            .class4-mid-top .soundexe2{
+                min-height: 20px;
+                width: 100%;
+                background-color: #fff;
+                /* background-color:#560089 ; */
+                filter: brightness(1.2);
+                opacity: 0.8;
+                display: table;
+                
+            }
+            .class4-mid-top .soundexe2 li{
+                /* float:left; */
+                display: inline-block;
+                list-style-type: none;
+                /* padding: 15% 0 0 16%; */
+                animation: rotation2 4s infinite ease-in-out;
+            }
+            .class4-mid-top .soundexe2 li:first-child{
+                padding-left: 0%;
+                padding-top: 0%;
+            }
+            .class4-mid-top .soundexe2 li:last-child{
+                float: right;
+                padding-right: 10%;
+                padding-top: 0%;
+            }
+            .panel1, .flip1 {
+                padding: 5px;
+                }
+
+            .panel1 {
+                padding: 50px;
+                display: none;
+                font-size: 20px;
+            }
+            .flip1 h3{
+               display: inline-block;
+               vertical-align: top;
+               padding-top: 25px;
+               padding-left: 25px;
+               color: rgb(7, 2, 32);
+            }
+            .flip1{
+                border-bottom: 2px solid #ddd;
+                
+            }
+            .panel2, .flip2 {
+                padding: 5px;
+                }
+
+            .panel2 {
+                padding: 50px;
+                display: none;
+                font-size: 20px;
+            }
+            .flip2 h3{
+                display: inline-block;
+               vertical-align: top;
+               padding-top: 25px;
+               padding-left: 25px;
+               color: rgb(7, 2, 32);
+            }
+            .flip2{
+                border-bottom: 2px solid #ddd;
+                
+            }
+            .panel3, .flip3 {
+                padding: 5px;
+                }
+
+            .panel3 {
+                padding: 50px;
+                display: none;
+                font-size: 20px;
+            }
+            .flip3 h3{
+                display: inline-block;
+               vertical-align: top;
+               padding-top: 25px;
+               padding-left: 25px;
+               color: rgb(7, 2, 32);
+            }
+            .flip3{
+                border-bottom: 2px solid #ddd;
+                
+            }
+            #click_advance1, #click_advance2, #click_advance3{
+                float: right;
+            }
+            .class4-mid-bottom .soundexe2{
+                max-height: 30px;
+                width: 100%;
+                background-color: #fff;
+                /* background-color:#560089 ; */
+                filter: brightness(1.2);
+                opacity: 0.8;
+                display: table;
+                
+            }
+            .class4-mid-bottom .soundexe2 li{
+                /* float:left; */
+                display: inline-block;
+                list-style-type: none;
+                /* padding: 15% 0 0 16%; */
+                animation: rotation2 4s infinite ease-in-out;
+            }
+            .class4-mid-bottom .soundexe2 li:first-child{
+                padding-left: 0%;
+                padding-top: 0%;
+            }
+            .class4-mid-bottom .soundexe2 li:nth-child(2){
+                
+                padding-left: 50%;
+                padding-top: 0%;
+            }
+            .class4-mid-bottom .soundexe2 li:last-child{
+                float: right;
+                padding-right: 5%;
+                padding-top: 10%;
+            }
+            
+
+            .class4-mid-bottom{
+                
+            }
+            .class4-right{
+                width: 9%;
+                float: right;
+                background: url("clapperboard.svg");
+                background-repeat: no-repeat;
+                min-height: 450px;
+            }
+            .soundexe{
+                min-height: 25px;
+                width: 100%;
+                /* background-color: #3EF7DB; */
+                display: table;
+                animation: myanimation 10s infinite ease-in-out;
+            }
+
+            .soundexe li{
+                /* float:left; */
+                display: inline-block;
+                list-style-type: none;
+                padding: 10px 0px 0px 250px;
+                animation: rotation2 4s infinite ease-in-out;
+            }
+            .soundexe-2 li{
+                /* float:left; */
+                display: inline-block;
+                list-style-type: none;
+                padding: 10px 0px 0px 350px;
+                animation: rotation2 4s infinite ease-in-out;
+                
+            }
+            @keyframes rotation2 {
+                0%, 100% {
+                    transform: rotateY(10deg);
+                }
+                50% {
+                    transform: rotateX(25deg);
+                }
+            }
+            .class5{
+                background-image: url("path-11-copy.svg");
+                background-position: top right;
+                background-repeat: no-repeat;
+                /* background-color: #3EF7DB; */
+                background-size: 100px 330px;
+                width: 100%;
+                min-height: 720px;
+                display: table;
+                animation: myanimation 10s infinite ease-in-out;
+            }
+            @keyframes myanimation {
+                0% {background-color: #3EF7DB}
+                50%{background-color:rgb(124, 124, 57);}
+                100% {background-color: #3EF7DB}
+                }
+            
+            .class5-content{
+                font-size: 30px;
+                font-weight: bold;
+                color: #fff;
+                width: 100%;
+                padding-left: 25%;
+                /* padding-top: 15%; */
+                display: table-cell;
+                /* vertical-align: middle; */
+            }
+            .button-class5-content{
+                padding: 15px;
+                color: #fff;
+                background-color: transparent;
+                border: 2px solid #fff;
+                font-weight: bold;
+            }
+            .button-class5{
+                margin-top: 10px;
+                float: left;
+                min-width: 0;
+                min-height: 0;
+                background-color: transparent;
+                animation: rotation1 4s infinite linear;
+            }
+            .button-class5-content:hover{
+                background-color: #fff;
+                color: rgb(196, 62, 62);
+            }
+            .list-item-5{
+                padding-top: 100px !important;
+            }
+            #text-color{
+                color: #000;
+            }
+            .footer{
+                min-height: 228px;
+                width: 100%;
+                background-color: rgb(196, 62, 62);
+                filter: brightness(1.2);
+                padding: 10px;
+                
+            }
+            .footer-content {
+                margin: 46px;
+                min-height: 500px;
+                border-top: 2px solid #fff;
+                border-bottom: 3px solid #fff;
+            }
+            .footer-left-section{
+                width: 50%;
+                float: left;
+                background-color: rgb(196, 62, 62);
+                
+            }
+            .footer-left-section-text{
+                padding: 35px;
+                font-size: 30px;
+                font-weight: bold;
+                color: #fff;
+            }
+            .button-footer-content{
+                padding: 15px;
+                color: #fff;
+                background-color: transparent;
+                border: 2px solid #fff;
+                font-weight: bold;
+            }
+            .button-footer{
+                margin-top: 25px;
+                float: left;
+                min-width: 0;
+                min-height: 0;
+                background-color: transparent;
+                animation: rotation1 4s infinite linear;
+            }
+            .button-footer-content:hover{
+                background-color: #fff;
+                color: rgb(196, 62, 62);
+                
+            }
+            .footer-right-section{
+                width: 50%;
+                float: left;
+                background-color: rgb(196, 62, 62);
+                
+            }
+            .footer-right-content-list{
+                float: left;
+                width: 33.33%;
+                padding: 15px;
+            }
+            .footer-right-content-list a,h4{
+                text-decoration: none;
+                color: #fff;
+
+            }
+            #img1{
+                z-index: 1;
+            }
+            @media (max-width: 600px){
+                /* .slide-details{
+                margin-left: 20px;
+                line-height: 25px;
+                font-weight: bold;
+                position: absolute;
+                bottom: 0;
+            } */
+            .slide-details .button-content{
+                color: #000;
+            }
+            }
+        </style>
+        <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+        
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="image-logo" ><img src="logo.svg" alt="image-logo" title="logo"></div>
+            <div class="list">
+                <ul class="list-inline">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</li>
+                    <li><a href="#">Portfolio</li>
+                    <li><a href="#">Services</li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>   
+        <div class="class1">
+            <div class="class1-left">
+                <div class="slide-details">
+                    <p>Because</p>
+                    <p>deserve to be</p>
+                    <p style="color: yellow;">featured</p>
+                    <div class="button">
+                            <input type="button" value=" Explore more" placeholder="Explore more" class="button-content">
+                    </div> 
+                    
+                </div>
+            </div>
+            <div class="class1-right">
+                <div class="class1-right-content">
+                    <img src="play-circle.svg" id="play-circle">
+                    <br>
+                    <img src="dots.svg" id="dots">
+                </div>
+            </div>
+        </div>
+        
+        <div class="class2">
+            <div class="class2-left">
+
+            </div>
+            <div class="class2-right">
+                <div class="soundexe0">
+                    <ul>
+                        <li class="list-item-1"><img src="soundexe2.png"></li>
+                        <li class="list-item-2"><img src="soundexe3.svg"></li>
+                        <li class="list-item-3"><img src="soundexe4.svg"></li>
+                        <li class="list-item-4"><img src="soundexe5.svg"></li>
+                       
+                    </ul>
+                </div>
+                <div class="class2-right-text">
+                    <p>WHO WE ARE</p><br>
+                    <h2>Videoowls is one of the most rapidely</h2>
+                    <h2>emerging <span id="yellow-text">video marketing</span> companies in</h2>
+                    <h2>the india that renders clients with the most</h2>
+                    <h2>lucratively designed videos.</h2>
+                </div>
+                <div class="button">
+                    <input type="button" value=" Explore more" placeholder="Explore more" class="button-content">
+
+                </div>
+                <img src="soundexe6.svg" id="button-left-sound">
+                
+            </div>
+        </div>
+        <div class="soundexe2">
+            <ul>
+                <li class="list-item-1"><img src="soundexe3.svg"></li>
+            </ul>
+        </div>
+        <div class="class3">
+           <div class="class3-left">
+
+           </div>
+           <div class="class3-mid">
+               <h4>WHO WE ARE</h4>
+               <div class="class3-mid-section1">
+                   <img src="work-img01.jpg">
+               </div>
+               <div class="class3-mid-section2">
+                    <div class="class3-mid-section2-top">
+                        <img src="work-img-02.jpg">
+                    </div>
+                    <div class="class3-mid-section2-bottom">
+                        <img src="work-img-03.jpg">
+                    </div>
+                </div>
+                <div class="button">
+                    <input type="button" value=" Explore more" placeholder="Explore more" class="button-content">
+                </div>
+            </div>
+            
+            <div class="class3-right">
+               
+            </div>
+
+        </div>   
+        <div class="class4">
+            <div class="class4-left">
+                
+            </div>
+            <div class="class4-mid">
+                <div class="class4-mid-top">
+                    <div class="soundexe2">
+                        <ul>
+                            <li class="list-item-1"><img src="approch-icon1.png"></li>
+                            <li class="list-item-2"><img src="approch-icon2.png"></li>
+                        </ul>
+                    </div>
+                </div>
+                <h2>OUR APPROACH</h2>
+                <div class="flip1"><span><img src="storyboarding.svg"><h3>Story Board</h3><p id="click_advance1"><i class="fa fa-plus" style="font-size:24px"></i></p>
+                    <div id="display_advance1">
+                    </div></i></span></div>
+                <div class="panel1">We communicate with the viewer and add an additional depth to our story.</div>
+                
+                <div class="flip2"><span><img src="animation.png"><h3>Animation</h3><p id="click_advance2"><i class="fa fa-plus" style="font-size:24px"></i></p>
+                    <div id="display_advance2">
+                    </div></i></span></div>
+                <div class="panel2">We communicate with the viewer and add an additional depth to our story.</div>
+                
+                <div class="flip3"><span><img src="soundeffect.png"><h3>Sound Effect</h3><p id="click_advance3"><i class="fa fa-plus" style="font-size:24px"></i></p>
+                    <div id="display_advance3">
+                    </div></i></span></div>
+                <div class="panel3">We communicate with the viewer and add an additional depth to our story.</div>
+
+                <div class="class4-mid-bottom">
+                    <div class="soundexe2">
+                        <ul>
+                            <li class="list-item-1"><img src="approch-icon3.png"></li>
+                            <li class="list-item-2"><img src="approch-icon4.svg"></li>
+                            <li class="list-item-3"><img src="approch-icon5.svg"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="class4-right">
+                
+            </div>
+        </div>
+        <div class="soundexe">
+            <ul>
+                <li class="list-item-1"><img src="soundexe2.png"></li>
+                <li class="list-item-2"><img src="soundexe3.svg"></li>
+                <li class="list-item-3"><img src="soundexe4.svg"></li>
+                <li class="list-item-4"><img src="soundexe5.svg"></li>
+               
+            </ul>
+        </div>
+        <div class="class5">
+          <div class="class5-content">
+              <p>With a <span id="text-color">sound execution </span>in the above</p>
+              <p>described services in the arena of  <span id="text-color">video</span></p>
+              <p> <span id="text-color">production</span> companies, we aim to set</p>
+              <p>ourselves  <span id="text-color">apart</span> from any of our peers.</p>
+              <div class="button-class5">
+              <input type="button" value=" Explore more" placeholder="Explore more" class="button-class5-content">
+            </div>
+            <div class="soundexe-2">
+                <ul>
+                    <li class="list-item-5"><img src="soundexe6.svg"></li>
+                </ul>
+            </div>
+          </div>
+        </div>
+    </div>
+        <div class="footer">
+            <div class="footer-content">
+                <div class="footer-left-section">
+                    <div class="footer-left-section-text">
+                        <p>Connect with us to</p>
+                        <p>experience a</p>
+                        <p>staggering</p>
+                        <p style="color: black;">growth!!!</p>
+                        <div class="button-footer">
+                            <input type="button" value=" Schedule a call" placeholder="Explore more" class="button-footer-content">
+                        </div>
+                    </div>
+                    <div class="footer-left-section-button">
+
+                    </div>
+                </div>
+                <div class="footer-right-section">
+                    <div class="footer-right-content-list">
+                            <h4>SERVICES</h4>
+                            <p> <a href="#">Promotional</a></p>
+                            <p> <a href="#">Corporate</a></p>
+                            <p> <a href="#">Handicraft</a></p>
+                            <p> <a href="#">Whiteboard</a></p>
+                            <p> <a href="#">Landing Page</a></p>
+                    </div>
+                    <div class="footer-right-content-list">
+                            <h4>STUDIO</h4>
+                            <p><a href="#">About</a></p>
+                            <p><a href="#">Work</a></p>
+                            <p> <a href="#">Services</a></p>
+                            <p> <a href="#">Contact</a></p>
+                    </div>
+                    <div class="footer-right-content-list">
+                        <p><a href="#">012345689</a></p>
+                        <p><a href="#">www.qwerty.com</a></p>
+                        <br>
+                        <h4>FOLLOW US</h4>
+
+                        <p><i class="fa fa-instagram" style="color:#fff; padding-right: 8px;"></i><i class="fa fa-linkedin" style="color:#fff;padding-right: 8px;"></i><i class="fa fa-facebook" style="color:#fff"></i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
